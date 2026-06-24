@@ -4,12 +4,12 @@ programa
 {
 	funcao inicio()
 	{
-		const inteiro tam=4
+		const inteiro tam = 4
 		real notas[tam][2]
 		real medias[tam]
-		real aux, soma,mediaGeral
+		real aux, soma, mediaGeral
 
-		inteiro i, opcao,j
+		inteiro i, opcao, j
 
 		// Entrada das notas e cálculo das médias
 		para(i = 0; i < tam; i++)
@@ -43,72 +43,73 @@ programa
 				caso 1:
 				{
 					escreva("Apresentação das Médias\n\n")
-					para (i=0;i<tam;i++){
-						escreva(medias[i],"\n")
+					para (i = 0; i < tam; i++) {
+						escreva(medias[i], "\n")
 					}
 					pare
 				}
 
 				caso 2:
 				{
-					para (i=0;i<tam-1;i++){
-						para(j=i+1;j<tam;j++){
-							se(medias[i]>medias[j]){
-								aux=medias[i]
-								medias[i]=medias[j]
-								medias[j]=aux
+					para (i = 0; i < tam - 1; i++) {
+						para(j = i + 1; j < tam; j++) {
+							se(medias[i] > medias[j]) {
+								aux = medias[i]
+								medias[i] = medias[j]
+								medias[j] = aux
 							}
 							
 						}
 						
 					}
-					para(i=0;i<tam;i++){
-						escreva(medias[i],"\n")
+					para(i = 0;i < tam; i++) {
+						escreva(medias[i], "\n")
 					}
 					pare
 				}
 
 				caso 3:
 				{
-					soma=0.0
-					para(i=0;i<tam;i++){
-						soma+=medias[i]
+					soma = 0.0
+					para(i = 0; i < tam ;i++) {
+						soma += medias[i]
 					}
-					mediaGeral=soma/tam
+					mediaGeral = soma / tam
 					escreva(mediaGeral)
 					pare
 				}
 
 				caso 4:
 				{
-					para (i=0;i<tam-1;i++){
-						para(j=i+1;j<tam;j++){
-							se(medias[i]>medias[j]){
-								aux=medias[i]
-								medias[i]=medias[j]
-								medias[j]=aux
+					para (i = 0; i < tam - 1; i++) {
+						para(j = i + 1; j < tam; j++) {
+							se(medias[i] > medias[j]) {
+								aux = medias[i]
+								medias[i] = medias[j]
+								medias[j] = aux
 							}
 							
 						}
 						
 					}
-					escreva(medias[tam-1])
+					escreva(medias[tam - 1])
 					pare
 				}
 
 				caso 5:
 				{
-					para (i=0;i<tam-1;i++){
-						para(j=i+1;j<tam;j++){
-							se(medias[i]>medias[j]){
-								aux=medias[i]
-								medias[i]=medias[j]
-								medias[j]=aux
+					para (i = 0; i < tam - 1; i++) {
+						para(j = i + 1; j < tam; j++) {
+							se(medias[i] > medias[j]) {
+								aux = medias[i]
+								medias[i] = medias[j]
+								medias[j] = aux
 							}
 							
 						}
 						
-					}escreva(medias[0])
+					}
+					escreva(medias[0])
 					pare
 				}
 
